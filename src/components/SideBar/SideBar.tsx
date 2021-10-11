@@ -9,7 +9,7 @@ import {moviesContext, MoviesContextProvider} from "../moviesContext";
 export function SideBar() {
     const { genres, selectedGenreId, handleClickButton } = useContext(moviesContext)
     return (
-        <div className="sidebar">
+        <nav className="sidebar">
             <span>Watch<p>Me</p></span>
 
             <div className="buttons-container">
@@ -23,6 +23,6 @@ export function SideBar() {
                     />
                 ))}
             </div>
-        </div>
+        </nav>
         )
 }
